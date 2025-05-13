@@ -1,6 +1,6 @@
 # null singularity fail
 
-This is a nextflow workflow that demostrates that passing in `/dev/null`
+This is a nextflow workflow that demonstrates that passing in `/dev/null`
 as a file parameter to a nextflow process with singularity/apptainer causes the process to fail.
 
 Something about staging the /dev directory breaks the process and causes it to fail
