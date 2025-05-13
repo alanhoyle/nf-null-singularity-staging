@@ -1,0 +1,9 @@
+.vscode
+.nextflow*
+output/
+tmp/
+work/
+*.log
+
+*.out
+*.err
