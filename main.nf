@@ -1,7 +1,6 @@
 params.input = "input.txt"
 params.output_dir = "output"
 
-input_file = file(params.input)
 
 process print_input {
     container 'ubuntu:latest'
@@ -27,6 +26,8 @@ process print_input {
 }
 
 workflow {
+    input_file = file(params.input)
+
     print_input(input_file)
 }
 // This is a simple Nextflow script that reads an input file and prints its contents to the output file.
