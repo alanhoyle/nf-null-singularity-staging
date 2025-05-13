@@ -17,7 +17,11 @@ process print_input {
     """
     echo "Input file contents:"
     cat $input_file
-    echo "input file contents:" > output.txt
+    echo "stage dir contents:" > output.txt
+    ls -l >> output.txt
+    echo "" >> output.txt
+
+    echo "input file contents:" >> output.txt
     cat $input_file >> output.txt
     """
 }
